@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="upper">
+
+            <h1 id="mainheading">Weather App</h1>
+
+            <div id="choice">
+
+                <p id="yourweatherbutton" class="button active">Your Weather</p>
+                
+                <p id="searchweatherbutton" class="button">Search Weather</p>
+
+            </div>
+
+        </div>
+
+        <div id="lower">
+
+            <div id="grantaccesssection">
+
+                <div id="box"></div>
+                <img src="Images/location.png" alt="" id="locationaccessimage">
+
+                
+                    <p id="grantheading">Grant Location Access</p>
+
+                    <p id="smalltext">Allow access to get weather information</p>
+
+                    <p id="grantaccess" class="button">Grant Access</p>
+                </div>
+
+            <!-- </div> -->
+
+            <div id="searchsection" class="active">
+
+                <div id="inputhere">
+
+                    <input type="text" placeholder="Search for city..." id="citytosearch">
+
+                    <!-- <p id="searchthisplace" class="">Search</p> -->
+                    <img src="Images/search.png" alt="" id="searchthisplace">
+
+                </div>
+
+            </div>
+
+            <div id="showweathersection" class="active">
+
+                <div id="box2">
+                    <!-- <div id="showplace"> -->
+
+                        <p id="cityname"></p>
+                        <img src="" alt="">
+    
+                    <!-- </div> -->
+    
+                    <p id="showweathertype"></p>
+                    <img src="" alt="">
+                    <p id="showtemperature"></p>
+                </div>
+
+                <div id="showotherspeed">
+
+                    <div id="windspeed" class="showotherspeeds">
+
+                        <img src="Images/wind.png" alt="" class="speedimage">
+                        <h2>Wind Speed</h2>
+                        <p id="windspeedvalue"></p>
+
+                    </div>
+
+                    <div id="humidity" class="showotherspeeds">
+
+                        <img src="Images/humidity.png" alt="" class="speedimage">
+                        <h2>Humidity</h2>
+                        <p id="humidityvalue"></p>
+
+                    </div>
+
+                    <div id="clouds" class="showotherspeeds">
+
+                        <img src="Images/cloud.png" alt="" class="speedimage">
+                        <h2>Clouds</h2>
+                        <p id="cloudvalue"></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <img src="Images/loading.gif" id="loading" class="active" alt="">
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

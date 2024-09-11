@@ -1,0 +1,208 @@
+#locationaccessimage{
+    height: 100px;
+    width: auto;
+    
+    margin-bottom: 1.5rem;
+    margin-left: 90px;
+}
+#grantaccesssection.active{
+    /* visibility: hidden; */
+    display: none;
+}
+#searchsection.active{
+    display: none;
+}
+
+#showotherspeed{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 50px;
+}
+
+#showweathersection.active{
+    display: none;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+:root {
+    --colorDark1: #112d4e;
+    --colorDark2: #3f72af;
+    --colorLight1: #dbe2ef;
+    --colorLight2: #f9f7f7;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: var(--colorLight2);
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+}
+
+/* #wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+
+#upper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button{
+    /* width: fit-content; */
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+#lower.active{
+    display: none;
+}
+#choice{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.button.active{
+    /* border-radius: 4px; */
+    /* text-decoration: none; */
+    /* background-color: #8dafee; */
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+#loading{
+    height: 200px;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#smalltext{
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+}
+#mainheading{
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1.75px;
+    margin-block: 2rem;
+}
+#grantheading{
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+#grantaccess{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--colorDark2);
+    margin-left: 70px;
+}
+#citytosearch{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    /* width:1200px; */
+    width: max-content;
+}
+#inputhere{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#searchthisplace{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+    width: 20px;
+    aspect-ratio: auto 20 / 20;
+    height: 20px;
+    /* all: unset; */
+    /* font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px; */
+    cursor: pointer;
+    /* background-color: var(--colorDark2); */
+}
+#cityname{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+#showweathertype{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.userInfoContainer p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+#showtemperature{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+#windspeed,#clouds,#humidity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    max-width: 200px;
+    gap: 5px 0;
+}
+#box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+.speedimage{
+    height: 50px;
+    width: 50px;
+}
+#loading.active{
+    display: none;
+}
